@@ -1,0 +1,123 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('https://i.pinimg.com/1200x/32/56/08/325608924ec64cec5fe900e836bbcea5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#countdownInput {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+#startButton, #stopButton, #resetButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.team-names {
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team-name {
+    width: 150px;
+    text-align: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.player {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.player-1 {
+    background-image: url('https://i.pinimg.com/736x/6f/54/71/6f5471a354a85154d714cb1cb3c5bf2f.jpg');
+}
+
+.player-2 {
+    background-image: url('https://i.pinimg.com/736x/aa/7c/c3/aa7cc39fbe47defaa22a85a5d2b0cf50.jpg');
+}
+
+.player.active {
+    border-color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.player.selected {
+    box-shadow: 0 0 10px 5px green;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-timer {
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007bff;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.arrow.left {
+    transform: rotate(-90deg);
+}

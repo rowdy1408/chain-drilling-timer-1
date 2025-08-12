@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain-drilling Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Chain-drilling</h1>
+    <div class="controls">
+        <label for="countdownInput">Thời gian (giây):</label>
+        <input type="text" id="countdownInput" value="5" maxlength="2">
+        <button id="startButton">Start</button>
+        <button id="stopButton">Stop</button>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="team-names">
+        <input type="text" placeholder="Nhập tên team 1" class="team-name" id="team1Name">
+        <input type="text" placeholder="Nhập tên team 2" class="team-name" id="team2Name">
+    </div>
+
+    <div class="container">
+        <div class="player player-1"></div>
+        <div class="center-content">
+            <div id="countdown" class="countdown-timer">5</div>
+            <div id="arrow" class="arrow"></div>
+        </div>
+        <div class="player player-2"></div>
+    </div>
+
+    <audio id="notificationSound" src="mixkit-correct-answer-tone-2870.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
